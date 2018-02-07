@@ -1,11 +1,6 @@
 class PigLatinizer
-  attr_accessor :word
 
   @@vowels = 'aeiouAEIOU'
-
-  def initialize(word = nil)
-    @word = word
-  end
 
   def piglatinize(word)
     if @@vowels.include?(word.chars.first)
